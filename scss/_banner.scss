@@ -1,0 +1,9 @@
+.banner-xs{
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 100px);
+  background-color: green;
+  width: 100vw;
+  overflow: hidden;
+}

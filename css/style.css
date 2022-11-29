@@ -74,36 +74,13 @@ li {
 
 /* line 1, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
 .banner-xs {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   background-image: url("../images/banner.jpg");
   background-size: cover;
   background-position: center;
   height: calc(100vh - 100px);
+  background-color: green;
   width: 100vw;
   overflow: hidden;
-  padding: 0 10px;
-}
-
-/* line 12, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
-.banner-xs .card {
-  background-color: red;
-  text-align: center;
-}
-
-/* line 18, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
-.scroll-down {
-  background-color: green;
-  text-align: center;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-/* line 24, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
-.scroll-down p {
-  color: white;
-  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

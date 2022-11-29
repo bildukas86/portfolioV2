@@ -1,10 +1,3 @@
-/* line 1, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_container.scss */
-.container {
-  background-color: lightyellow;
-  width: 100vw;
-  height: auto;
-}
-
 /* line 2, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
 * {
   box-sizing: border-box;
@@ -25,62 +18,57 @@ li {
   list-style-type: none;
 }
 
-/* line 18, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
-body {
-  background-color: lightblue;
-}
-
 /* line 1, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_nav.scss */
-.nav-xs {
+#nav {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  height: 100px;
+  background-color: lightgrey;
+  height: auto;
 }
 
-/* line 10, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_nav.scss */
-.logo {
-  background-color: black;
-  border-radius: 50%;
-  color: white;
+/* line 8, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_nav.scss */
+#nav img {
   width: auto;
-  font-size: 2rem;
+  height: 100px;
+  border-radius: 50%;
   margin: 10px;
 }
 
-/* line 21, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_nav.scss */
-.menu-xs {
-  display: inline-block;
-  background-color: black;
+/* line 15, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_nav.scss */
+#nav .menu-hamburger {
+  display: block;
+  cursor: pointer;
+  background-color: #000000;
+  border-radius: 3px;
   padding: 10px;
   margin: 10px;
-  border-radius: 5px;
-  cursor: pointer;
+  width: 64px;
+  height: 64px;
 }
 
-/* line 30, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_nav.scss */
-.ham1, .ham2, .ham3 {
-  background-color: white;
-  width: 35px;
+/* line 26, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_nav.scss */
+#nav .ham1, #nav .ham2, #nav .ham3 {
+  width: auto;
   height: 5px;
+  background-color: #FFFFFF;
   margin: 6px 0;
   transition: 0.4s;
 }
 
-/* line 38, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_nav.scss */
-.change .ham1 {
+/* line 33, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_nav.scss */
+#nav .change .ham1 {
   transform: translate(0, 11px) rotate(-45deg);
 }
 
-/* line 42, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_nav.scss */
-.change .ham2 {
+/* line 36, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_nav.scss */
+#nav .change .ham2 {
   opacity: 0;
 }
 
-/* line 44, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_nav.scss */
-.change .ham3 {
+/* line 37, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_nav.scss */
+#nav .change .ham3 {
   transform: translate(0, -11px) rotate(45deg);
 }
 

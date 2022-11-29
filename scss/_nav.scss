@@ -1,49 +1,40 @@
-.nav-xs{
+#nav{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  height: 100px;
+  background-color: lightgrey;
+  height: auto;
+  img{
 
-}
-.logo{
-  background-color: black;
-  border-radius: 50%;
-  color: white;
-  width: auto;
-  font-size: 2rem;
-  margin: 10px;
-}
-////////////////////////////////////////////
-//navigation
-////////////////////////////////////////////
-.menu-xs{
-  display: inline-block;
-  background-color: black;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-  cursor: pointer;
+    width: auto;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  .menu-hamburger {
+    display: block;    
+    cursor: pointer;
+    background-color: $b-color;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px;
+    width: 64px;
+    height: 64px;
 
+  }
+  .ham1, .ham2, .ham3 {
+    width: auto;
+    height: 5px;
+    background-color: $w-color;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .change .ham1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  .change .ham2 {opacity: 0;}
+  .change .ham3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
 }
-.ham1, .ham2, .ham3{
-  background-color: white;
-  width: 35px;
-  height: 5px;
-  margin: 6px 0;
-  transition: 0.4s;
-
-}
-.change .ham1 {
-  transform: translate(0, 11px) rotate(-45deg);
-}
-
-.change .ham2 {opacity: 0;}
-
-.change .ham3 {
-  transform: translate(0, -11px) rotate(45deg);
-}
-/////////////////////////////////////////////////
-//
-//////////////////////////////////////////////////

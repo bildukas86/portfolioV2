@@ -1,26 +1,17 @@
 
 //animated hamburger icon
 function hamFunction(x) {
-
+//   var element = document.getElementsByClassName('nav-xs'); // or any other element
+// console.log(element); // logs the expandable <html>…</html>
+// console.dir(element); // logs the element’s properties and values
   x.classList.toggle("change");
 
-  // var s = document.getElementById('sideNav');
-  // var b = document.body;
-  // var m = document.getElementById('main-container');
+  var n = document.getElementsByClassName("navigation");
 
+  if (n.style.display === "block"){
+    n.style.display = "none";
+  } else {
+    n.style.display = "block";
+  }
 
-    // if (s.style.display === "block"){
-    //  s.style.display = "none";
-    //  b.style.overflow = "visible";
-    //  b.style.left = "0";
-    //  m.style.opacity = "1";
-    //
-    // } else {
-    //   s.style.display = "block";
-    //   b.style.overflow = "hidden";
-    //   b.style.left = "-275px";
-    //   m.style.opacity = "0.3";
-    //
-    //
-    // }
 }

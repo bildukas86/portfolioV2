@@ -93,6 +93,11 @@ li {
   transform: translate(0, -11px) rotate(45deg);
 }
 
+/* line 50, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_nav.scss */
+.navigation {
+  display: block;
+}
+
 /* line 1, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
 .banner-xs {
   display: flex;

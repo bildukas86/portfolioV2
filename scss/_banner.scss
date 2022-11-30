@@ -1,12 +1,10 @@
 .banner-xs{
   display: flex;
-
   flex-direction: column;
   background-image: url("../images/banner.jpg");
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 100px);
-  width: 100vw;
+  height: calc(100vh - 100px);  
   overflow: hidden;
   padding: 0 10px;
 

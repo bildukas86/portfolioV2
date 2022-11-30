@@ -1,0 +1,15 @@
+.contact-xs{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  form>input, textarea{
+    width: 100%;
+    // line-height: 50px;
+    margin: 5px 0;
+    font-size: 30px;
+  }
+  textarea{
+    resize: vertical;
+    font-size: 30px;
+  }
+}

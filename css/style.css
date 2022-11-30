@@ -1,3 +1,23 @@
+/* line 1, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_projects.scss */
+.projects-xs {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 4, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_projects.scss */
+.projects-xs .project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+/* line 8, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_projects.scss */
+.projects-xs .project-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 /* line 2, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
 * {
   box-sizing: border-box;
@@ -81,19 +101,18 @@ li {
   background-size: cover;
   background-position: center;
   height: calc(100vh - 100px);
-  width: 100vw;
   overflow: hidden;
   padding: 0 10px;
 }
 
-/* line 13, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
+/* line 11, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
 .banner-xs .card {
   background-color: red;
   text-align: center;
   margin: auto;
 }
 
-/* line 20, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
+/* line 18, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
 .scroll-down {
   background-color: green;
   text-align: center;
@@ -102,10 +121,30 @@ li {
   margin: 0 auto;
 }
 
-/* line 26, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
+/* line 24, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
 .scroll-down p {
   color: white;
   margin: 0;
+}
+
+/* line 1, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_contact.scss */
+.contact-xs {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+/* line 5, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_contact.scss */
+.contact-xs form > input, .contact-xs textarea {
+  width: 100%;
+  margin: 5px 0;
+  font-size: 30px;
+}
+
+/* line 11, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_contact.scss */
+.contact-xs textarea {
+  resize: vertical;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

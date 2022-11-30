@@ -1,19 +1,17 @@
 .projects-xs{
-// display: flex;
-// flex-direction: column;
-// flex-wrap: wrap;
-// width: 100%;
-// height: auto;
+  display: flex;
+  flex-direction: column;
+  .project-card{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    img{
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
 
-
-  // .project-card{
-  //   width: 100vh;
-  //   img{
-  //     width: 100vh;
-  //     height: auto;
-  //     object-fit: fill;
-  //   }
-  // }
 
 
 

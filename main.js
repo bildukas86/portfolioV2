@@ -1,11 +1,10 @@
 
 //animated hamburger icon
 function hamFunction(x) {
-//   var element = document.getElementsByClassName('nav-xs'); // or any other element
-// console.log(element); // logs the expandable <html>…</html>
-// console.dir(element); // logs the element’s properties and values
-  x.classList.toggle("change");
 
+  x.classList.toggle("change");
+  
+//hide /unhide nav list
   var n = document.getElementsByClassName("navigation");
 
   if (n.style.display === "block"){

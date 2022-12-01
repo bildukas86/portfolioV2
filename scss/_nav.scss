@@ -48,5 +48,10 @@
 //navigation list hide by default
 //////////////////////////////////////////////////
 .navigation{
-  display: block;
+  display: none;
+  width: 100vw;
+  height: auto;
+  background-color: $background-color;
+  font-size: $nav-font-size;
+  z-index: 1;
 }

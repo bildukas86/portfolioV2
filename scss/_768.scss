@@ -1,0 +1,49 @@
+@media (min-width: 768px) {
+  .wrapper{
+    display: flex;
+      .nav-xs{
+        justify-content: center;
+        background-color: black;
+        border-radius: 0 0 50% 0;
+        .logo{
+          margin: 50px;
+        }
+        .menu-xs{
+          display: none;
+        }
+        .navigation{
+          display: block;
+          width: 300px;
+
+        }
+      }
+
+    // .nav-xs{
+    //   justify-content: center;
+    //   background-color: black;
+    //   border-radius: 0 0 50% 0;
+    //   .logo{
+    //     margin: 50px;
+    //   }
+    //   .menu-xs{
+    //     display: none;
+    //   }
+    //   .navigation{
+    //     display: block;
+    //     border: 1px solid;
+    //     width: 250px;
+    //     line-height: 2rem;
+    //     font-size: 1.5rem;
+    //
+    //   }
+    // }
+    //
+    // .container{
+    //   .banner-xs{
+    //     height: 100vh;
+    //   }
+    // }
+  }
+
+
+}

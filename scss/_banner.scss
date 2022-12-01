@@ -4,14 +4,24 @@
   background-image: url("../images/banner.jpg");
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 100px);  
+  height: calc(100vh - 100px);
   overflow: hidden;
   padding: 0 10px;
+  img{
+    opacity: 0.2;
+  }
+
 
   .card{
-    background-color: red;
+
     text-align: center;
     margin: auto;
+    .card-inner{
+      background-color: grey;
+      border-radius: 5px;
+      color: white;
+      padding: 100px 0;
+    }
   }
 
 }

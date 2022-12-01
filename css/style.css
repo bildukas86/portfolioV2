@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 1, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_projects.scss */
 .projects-xs {
   display: flex;
@@ -29,14 +30,26 @@ body, h1, h2, h3 {
   padding: 0;
 }
 
-/* line 13, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
-a {
+/* line 11, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
+ul, a, li {
   text-decoration: none;
+  list-style-type: none;
+  color: black;
 }
 
-/* line 16, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
-li {
-  list-style-type: none;
+/* line 17, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
+a:visited {
+  color: black;
+}
+
+/* line 21, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 26, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
+.wrapper {
+  background-color: orange;
 }
 
 /* line 1, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_nav.scss */
@@ -95,7 +108,12 @@ li {
 
 /* line 50, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_nav.scss */
 .navigation {
-  display: block;
+  display: none;
+  width: 100vw;
+  height: auto;
+  background-color: orange;
+  font-size: 2rem;
+  z-index: 1;
 }
 
 /* line 1, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
@@ -110,14 +128,26 @@ li {
   padding: 0 10px;
 }
 
-/* line 11, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
+/* line 10, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
+.banner-xs img {
+  opacity: 0.2;
+}
+
+/* line 15, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
 .banner-xs .card {
-  background-color: red;
   text-align: center;
   margin: auto;
 }
 
-/* line 18, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
+/* line 19, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
+.banner-xs .card .card-inner {
+  background-color: grey;
+  border-radius: 5px;
+  color: white;
+  padding: 100px 0;
+}
+
+/* line 28, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
 .scroll-down {
   background-color: green;
   text-align: center;
@@ -126,7 +156,7 @@ li {
   margin: 0 auto;
 }
 
-/* line 24, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
+/* line 34, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
 .scroll-down p {
   color: white;
   margin: 0;
@@ -150,6 +180,44 @@ li {
 .contact-xs textarea {
   resize: vertical;
   font-size: 30px;
+}
+
+@media (min-width: 576px) {
+  /* … */
+}
+
+@media (min-width: 768px) {
+  /* line 2, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
+  .wrapper {
+    display: flex;
+  }
+  /* line 4, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
+  .wrapper .nav-xs {
+    justify-content: center;
+    background-color: black;
+    border-radius: 0 0 50% 0;
+  }
+  /* line 8, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
+  .wrapper .nav-xs .logo {
+    margin: 50px;
+  }
+  /* line 11, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
+  .wrapper .nav-xs .menu-xs {
+    display: none;
+  }
+  /* line 14, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
+  .wrapper .nav-xs .navigation {
+    display: block;
+    width: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* … */
+}
+
+@media (min-width: 1200px) {
+  /* … */
 }
 
 /*# sourceMappingURL=style.css.map */

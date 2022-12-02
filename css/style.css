@@ -13,7 +13,7 @@
   border-radius: 15px;
   margin: 15px;
   background-color: #e9c46a;
-  box-shadow: -1em 0 3em 0.2em #2a9d8f;
+  box-shadow: 2em 0 3em 0.2em #2a9d8f;
 }
 
 /* line 13, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_projects.scss */
@@ -222,7 +222,7 @@ a:hover {
   flex-direction: column;
   padding: 15px;
   background-color: #e9c46a;
-  box-shadow: -1em 0 3em 0.2em #2a9d8f;
+  box-shadow: 2em 0 3em 0.2em #2a9d8f;
 }
 
 /* line 7, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_contact.scss */
@@ -277,28 +277,35 @@ a:hover {
   .wrapper {
     display: flex;
   }
-  /* line 13, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
+  /* line 10, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
   .wrapper .nav-xs {
+    display: flex;
     justify-content: center;
     background-color: black;
     border-radius: 0 0 50% 0;
+    position: sticky;
+    top: 0;
   }
-  /* line 23, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
+  /* line 17, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
   .wrapper .nav-xs .logo {
     margin: 50px;
   }
-  /* line 26, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
+  /* line 20, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
   .wrapper .nav-xs .menu-xs {
     display: none;
   }
-  /* line 31, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
+  /* line 23, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
   .wrapper .nav-xs .navigation {
     display: block;
     width: 300px;
   }
-  /* line 42, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
+  /* line 31, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
   .wrapper .container .banner-xs {
     height: 100vh;
+  }
+  /* line 34, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
+  .wrapper .container .contact-xs {
+    margin: 15px;
   }
 }
 

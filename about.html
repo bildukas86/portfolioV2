@@ -1,3 +1,82 @@
-About Me
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Edgaras Koncevicius">
+	<title>Edgaras Koncevicius Portfolio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/46c0e5fc09.js" crossorigin="anonymous"></script>
+	<script src="main.js" charset="utf-8"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="nav-xs">
+				<div class="logo">
+					<h1>EK</h1>
+				</div>
+				<div class="menu-xs" onclick="hamFunction(this)">
+					<div class="ham1"></div>
+					<div class="ham2"></div>
+					<div class="ham3"></div>
+				</div>
+				<div id="nav" class="navigation">
+					<ul>
+						<hr>
+						<li>
+							<a href="about.html">About Me</a>
+						</li>
+						<li>
+							<a href="/#projects">My Portfolio</a>
+						</li>
+						<li>
+							<a href="coding.html">Coding Examples</a>
+						</li>
+						<li>
+							<a href="scheme.html">SCS Scheme</a>
+						</li>
+						<hr>
+						<li>
+							<a href="/#contact">Contact me</a>
+						</li>
+						<hr>
+					</ul>
+				</div>
+		</div>
+		<div class="container">
+      <div class="coding">
+        <h1>Coming Soon</h1>
+      </div>
+			<div id="contact" class="contact-xs">
+				<div class="info">
+					<h1>Get In Touch</h1>
+					<h4>Please feel free to contact me
+						by telephone or email and I will
+						 be sure to get back to you as soon
+						 as possible.</h4>
+					<h1>+44 7804 696387</h1>
+					<h2>ekoncevicius@gmail.com</h2>
 
-Keep this relevant and professional
+				</div>
+				<form class="contact-form" action="#" method="post">
+
+					<div class="name-lastname">
+						<input class="in-name" type="text" name="name" placeholder="First name">
+						<input class="in-lastname" type="text" name="last-name" placeholder="Last name">
+					</div>
+
+					<input type="email" name="email" placeholder="Email Address">
+					<input type="tel" name="Telephone" placeholder="Telephone Number">
+					<input type="text" name="subject" placeholder="Subject">
+					<textarea name="message" rows="8" cols="80" placeholder="Your message here..."></textarea>
+					<button type="submit" name="button">Submit</button>
+				</form>
+
+			</div>
+		</div>
+	</div>
+	<script src="main.js" charset="utf-8"></script>
+</body>
+</html>

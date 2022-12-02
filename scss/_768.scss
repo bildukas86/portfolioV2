@@ -1,23 +1,50 @@
 @media (min-width: 768px) {
+  body {
+    // overflow: hidden;
+    // height: 100vh;
+
+}
   .wrapper{
     display: flex;
+
+
+
+
       .nav-xs{
+
         justify-content: center;
         background-color: black;
         border-radius: 0 0 50% 0;
+
+
+
+
+
         .logo{
           margin: 50px;
         }
         .menu-xs{
           display: none;
+
+
         }
         .navigation{
           display: block;
           width: 300px;
 
+
+
+        }
+
+      }
+      .container{
+
+        .banner-xs{
+          height: 100vh;
+
+
         }
       }
-
     // .nav-xs{
     //   justify-content: center;
     //   background-color: black;

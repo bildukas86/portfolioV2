@@ -7,6 +7,7 @@
 	<meta name="author" content="Edgaras Koncevicius">
 	<title>Edgaras Koncevicius Portfolio</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/46c0e5fc09.js" crossorigin="anonymous"></script>
 	<script src="main.js" charset="utf-8"></script>
 </head>
@@ -23,6 +24,7 @@
 				</div>
 				<div id="nav" class="navigation">
 					<ul>
+						<hr>
 						<li>
 							<a href="about.html">About Me</a>
 						</li>
@@ -35,9 +37,11 @@
 						<li>
 							<a href="scheme.html">SCS Scheme</a>
 						</li>
+						<hr>
 						<li>
 							<a href="#contact">Contact me</a>
 						</li>
+						<hr>
 					</ul>
 				</div>
 		</div>
@@ -105,17 +109,23 @@
 				</div>
 			</div>
 			<div id="contact" class="contact-xs">
-				<h1>Get In Touch</h1>
-				<p>Please feel free to contact me
-					by telephone or email and I will
-					 be sure to get back to you as soon
-					 as possible.</p>
-				<h1>+44 7804 696387</h1>
-				<h2>ekoncevicius@gmail.com</h2>
-				<p>some text here</p>
+				<div class="info">
+					<h1>Get In Touch</h1>
+					<h4>Please feel free to contact me
+						by telephone or email and I will
+						 be sure to get back to you as soon
+						 as possible.</h4>
+					<h1>+44 7804 696387</h1>
+					<h2>ekoncevicius@gmail.com</h2>
+
+				</div>
 				<form class="contact-form" action="#" method="post">
-					<input type="text" name="name" placeholder="First name">
-					<input type="text" name="last-name" placeholder="Last name">
+
+					<div class="name-lastname">
+						<input class="in-name" type="text" name="name" placeholder="First name">
+						<input class="in-lastname" type="text" name="last-name" placeholder="Last name">
+					</div>
+
 					<input type="email" name="email" placeholder="Email Address">
 					<input type="tel" name="Telephone" placeholder="Telephone Number">
 					<input type="text" name="subject" placeholder="Subject">

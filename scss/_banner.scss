@@ -7,28 +7,31 @@
   height: calc(100vh - 100px);
   overflow: hidden;
   padding: 0 10px;
-  img{
-    opacity: 0.2;
-  }
+  border-radius: 0 0 0 55%;
 
 
   .card{
 
     text-align: center;
     margin: auto;
+
+
     .card-inner{
-      background-color: grey;
-      border-radius: 5px;
-      color: white;
+      background-color: $project-background-color;
+
+      border-radius: 15px;
+      font-size: 24px;
+      color: black;
       padding: 100px 0;
+      box-shadow: -1em 0 5em 3em $background-color;
     }
   }
 
 }
 .scroll-down{
-  background-color: green;
+
   text-align: center;
-  font-size: 20px;
+  font-size: 2rem;
   text-transform: uppercase;
   margin: 0 auto;
   p{

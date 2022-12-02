@@ -1,3 +1,10 @@
 @media (min-width: 1200px) {
-  /* … */
+  .container{
+    .projects-xs{
+
+      .project-card{
+        width: 20vw;
+      }
+    }
+  }
 }

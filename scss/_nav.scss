@@ -8,7 +8,7 @@
 
 }
 .logo{
-  background-color: black;
+  background-color: $logo-background-color;
   border-radius: 50%;
   color: white;
   width: auto;
@@ -20,7 +20,7 @@
 ////////////////////////////////////////////
 .menu-xs{
   display: inline-block;
-  background-color: black;
+
   padding: 10px;
   margin: 10px;
   border-radius: 5px;

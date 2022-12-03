@@ -192,13 +192,13 @@ a:hover {
   margin: auto;
 }
 
-/* line 19, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
+/* line 20, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
 .banner-xs .card .card-inner {
   background-color: #e9c46a;
   border-radius: 15px;
   font-size: 20px;
   color: black;
-  padding: 100px 15px;
+  padding: 1vh 15px;
   box-shadow: -1em 0 5em 3em #f4a261;
 }
 
@@ -208,12 +208,18 @@ a:hover {
   font-size: 2rem;
   text-transform: uppercase;
   margin: 0 auto;
+  padding-bottom: 5px;
 }
 
 /* line 37, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
 .scroll-down p {
   color: white;
   margin: 0;
+}
+
+/* line 40, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
+.scroll-down p:hover {
+  transform: scale(1.2);
 }
 
 /* line 1, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_contact.scss */

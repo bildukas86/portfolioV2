@@ -196,9 +196,9 @@ a:hover {
 .banner-xs .card .card-inner {
   background-color: #e9c46a;
   border-radius: 15px;
-  font-size: 24px;
+  font-size: 20px;
   color: black;
-  padding: 100px 0;
+  padding: 100px 15px;
   box-shadow: -1em 0 5em 3em #f4a261;
 }
 
@@ -235,19 +235,18 @@ a:hover {
 .contact-xs form > input, .contact-xs textarea {
   width: 100%;
   margin: 5px 0;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 /* line 18, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_contact.scss */
 .contact-xs textarea {
   resize: vertical;
-  font-size: 30px;
 }
 
 /* line 22, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_contact.scss */
 .contact-xs .contact-form > .name-lastname > input {
   margin: 5px 0;
-  font-size: 30px;
+  font-size: 24px;
   width: 100%;
 }
 

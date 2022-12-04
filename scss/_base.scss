@@ -9,9 +9,6 @@ html{
 body, h1, h2, h3{
   margin: 0;
   padding: 0;
-
-
-
 }
 ul,a,li{
   text-decoration: none;
@@ -31,6 +28,7 @@ a:hover{
 ///just visualize
 .wrapper{
   background-color: $background-color;
+
 
   // background: linear-gradient(rgba(144, 244, 239, 1), rgba(100, 15, 30, 0.2));
 }

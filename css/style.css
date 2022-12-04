@@ -34,35 +34,35 @@ body, h1, h2, h3 {
   padding: 0;
 }
 
-/* line 16, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
+/* line 13, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
 ul, a, li {
   text-decoration: none;
   list-style-type: none;
   color: black;
 }
 
-/* line 23, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
+/* line 20, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
 a:visited {
   color: black;
 }
 
-/* line 27, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
+/* line 24, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 32, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
+/* line 29, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
 .wrapper {
   background-color: #f4a261;
 }
 
-/* line 37, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
+/* line 35, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
 .info {
   line-height: 1.5rem;
   font-size: 12px;
 }
 
-/* line 41, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
+/* line 39, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
 .coding {
   display: flex;
   flex-wrap: wrap;
@@ -78,7 +78,7 @@ a:hover {
   box-shadow: -0.2em 0 1em 0.1em #2a9d8f;
 }
 
-/* line 57, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
+/* line 55, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
 .scheme {
   display: flex;
   flex-wrap: wrap;
@@ -94,18 +94,18 @@ a:hover {
   box-shadow: -0.2em 0 1em 0.1em #2a9d8f;
 }
 
-/* line 70, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
+/* line 68, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
 .scheme a {
   font-size: 24px;
 }
 
-/* line 73, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
+/* line 71, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
 .scheme h1 {
   margin: 15px;
   text-align: center;
 }
 
-/* line 77, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
+/* line 75, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_base.scss */
 .scheme p {
   font-size: 16px;
 }

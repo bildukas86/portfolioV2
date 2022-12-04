@@ -7,16 +7,9 @@
   height: calc(100vh - 100px);
   overflow: hidden;
   padding: 0 10px;
-  border-radius: 0 0 0 55%;
-
-
   .card{
-
     text-align: center;
     margin: auto;
-
-
-
     .card-inner{
       background-color: $project-background-color;
       border-radius: 15px;
@@ -26,7 +19,6 @@
       box-shadow: -1em 0 5em 3em $background-color;
     }
   }
-
 }
 .scroll-down{
   text-align: center;
@@ -41,7 +33,4 @@
       transform: scale(1.2);
     }
   }
-
-
-
 }

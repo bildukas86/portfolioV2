@@ -49,6 +49,9 @@
 //////////////////////////////////////////////////
 .navigation{
   display: none;
+}
+.vis-on{
+  display: block;
   width: 100vw;
   height: auto;
   background-color: $background-color;

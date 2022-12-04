@@ -1,9 +1,5 @@
 @media (min-width: 768px) {
-  body {
-    // overflow: hidden;
-    // height: 100vh;
 
-}
   .wrapper{
     display: flex;
 
@@ -21,9 +17,11 @@
           display: none;
         }
         .navigation{
-          
+
           display: block;
           width: 300px;
+          max-width: 300px;
+          font-size: 2rem;
         }
 
       }

@@ -166,6 +166,11 @@ a:hover {
 /* line 50, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_nav.scss */
 .navigation {
   display: none;
+}
+
+/* line 53, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_nav.scss */
+.vis-on {
+  display: block;
   width: 100vw;
   height: auto;
   background-color: #f4a261;
@@ -183,16 +188,15 @@ a:hover {
   height: calc(100vh - 100px);
   overflow: hidden;
   padding: 0 10px;
-  border-radius: 0 0 0 55%;
 }
 
-/* line 13, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
+/* line 10, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
 .banner-xs .card {
   text-align: center;
   margin: auto;
 }
 
-/* line 20, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
+/* line 13, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
 .banner-xs .card .card-inner {
   background-color: #e9c46a;
   border-radius: 15px;
@@ -202,7 +206,7 @@ a:hover {
   box-shadow: -1em 0 5em 3em #f4a261;
 }
 
-/* line 31, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
+/* line 23, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
 .scroll-down {
   text-align: center;
   font-size: 2rem;
@@ -211,13 +215,13 @@ a:hover {
   padding-bottom: 5px;
 }
 
-/* line 37, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
+/* line 29, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
 .scroll-down p {
   color: white;
   margin: 0;
 }
 
-/* line 40, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
+/* line 32, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_banner.scss */
 .scroll-down p:hover {
   transform: scale(1.2);
 }
@@ -275,14 +279,18 @@ a:hover {
     line-height: 1.5rem;
     font-size: 16px;
   }
+  /* line 6, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_576.scss */
+  .banner-xs {
+    border-radius: 0 0 0 55%;
+  }
 }
 
 @media (min-width: 768px) {
-  /* line 7, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
+  /* line 3, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
   .wrapper {
     display: flex;
   }
-  /* line 10, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
+  /* line 6, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
   .wrapper .nav-xs {
     display: flex;
     justify-content: center;
@@ -291,24 +299,26 @@ a:hover {
     position: sticky;
     top: 0;
   }
-  /* line 17, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
+  /* line 13, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
   .wrapper .nav-xs .logo {
     margin: 50px;
   }
-  /* line 20, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
+  /* line 16, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
   .wrapper .nav-xs .menu-xs {
     display: none;
   }
-  /* line 23, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
+  /* line 19, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
   .wrapper .nav-xs .navigation {
     display: block;
     width: 300px;
+    max-width: 300px;
+    font-size: 2rem;
   }
-  /* line 31, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
+  /* line 29, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
   .wrapper .container .banner-xs {
     height: 100vh;
   }
-  /* line 34, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
+  /* line 32, ../../../Users/ekonc/Documents/GitHub/portfolioV2/scss/_768.scss */
   .wrapper .container .contact-xs {
     margin: 15px;
   }

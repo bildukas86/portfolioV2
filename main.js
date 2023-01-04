@@ -1,4 +1,4 @@
-
+// show-hide navigation
 function hamFunction(x){
   //add class
   x.classList.toggle("change");
@@ -9,25 +9,35 @@ function hamFunction(x){
   n.classList.toggle("vis-on");
 
 }
-
-  // if(n.classList === "hidden"){
-  //   n.classList.add("visible");
-  // } else {
-  //
-  // }
+//pridesim sita: https://codepen.io/sanskarbansal/pen/ExjqRmx
+//pamokos https://medium.com/front-end-weekly/how-to-create-typing-effect-in-css-and-js-3252dd807f0a
 
 
-  // else if (n.classList === "visible") {
-  //   n.classList.remove
-  // }
+////////////////////
+// typing effect  https://codepen.io/rmhridoy/pen/ZEJqqaP
+///////////////////
 
-
-  // if (n.style.display === "block"){
-  //      n.style.display = "none";
-  //    } else {
-  //      n.style.display = "block";
-  //    }
-
-
-
-// https://stackoverflow.com/questions/195951/how-can-i-change-an-elements-class-with-javascript
+// type js plugin
+// let typeJsText = document.querySelector(".typeJsText");
+// let textArray = typeJsText.dataset.typetext.split("");
+// let counter = -1;
+//
+// typeJsText.innerHTML = "";
+//
+// function typeJs() {
+//   if (counter < typeJsText.dataset.typetext.length) {
+//     counter++;
+//     typeJsText.innerHTML += typeJsText.dataset.typetext.charAt(counter);
+//     textArray = typeJsText.dataset.typetext.split("");
+//   } else {
+//     textArray.pop();
+//     typeJsText.innerHTML = textArray.join("");
+//     if (textArray.length == 0) {
+//       counter = -1;
+//     }
+//   }
+// }
+//
+// setInterval(() => {
+//   typeJs();
+// }, 100);

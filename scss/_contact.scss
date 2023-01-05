@@ -1,3 +1,6 @@
+.name, .lastName{
+  position: relative;
+}
 .contact-xs{
   display: flex;
   flex-direction: column;
@@ -7,6 +10,7 @@
   form{
     display: flex;
     flex-direction: column;
+    margin-top: 15px;
   }
   form>input, textarea{
     width: 100%;
@@ -19,7 +23,7 @@
     resize: vertical;
 
   }
-  .contact-form>.name-lastname>input{
+  .name>input, .lastName>input{
     margin: 5px 0;
     font-size: 24px;
     width: 100%;

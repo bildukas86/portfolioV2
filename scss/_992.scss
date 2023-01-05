@@ -12,6 +12,7 @@
     .contact-xs{
       display: flex;
       flex-direction: row;
+
       .info{
         border: 1px solid black;
         border-radius: 20px 0 0 20px;
@@ -20,11 +21,12 @@
         // background-color: $info-background-color;
 
       }
-      form>.name-lastname{
-        display: flex;
-        flex-direction: row;
+      .name-lastname{
+        display: inline-flex;
         justify-content: space-between;
-        .in-name, .in-lastname{
+        .name, .lastName{
+          margin: 5px 0;
+          font-size: 24px;
           width: 49%;
         }
       }

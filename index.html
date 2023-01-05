@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Edgaras Koncevicius">
 	<title>Edgaras Koncevicius Portfolio</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+
+	</script>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/46c0e5fc09.js" crossorigin="anonymous"></script>
@@ -54,7 +57,14 @@
 					<div class="card-inner">
 						<h3>My name is</h3>
 						<h1>Edgaras Koncevicius</h1>
-						<span class="type-effect">I'm web developer</span>
+
+
+						<div class="typing-container">
+								<span id="sentence" class="sentence"></span>
+								<span id="feature-text"></span>
+								<span class="input-cursor"></span>
+						</div>
+
 
 					</div>
 				</div>
@@ -123,18 +133,23 @@
 					<h2>ekoncevicius@gmail.com</h2>
 
 				</div>
-				<form class="contact-form" action="#" method="post">
-
+				<form class="contact-form" method="post" >
 					<div class="name-lastname">
-						<input class="in-name" type="text" name="name" placeholder="First name">
-						<input class="in-lastname" type="text" name="last-name" placeholder="Last name">
+								<div class="name">
+									<span id="nameErr"></span>
+									<input id="firstname" type="text" name="firstName" placeholder="First name">
+								</div>
+								<div class="lastName">
+									<span id="lastnameErr"></span>
+									<input id="lastname" type="text" name="lastName" placeholder="Last name">
+								</div>
 					</div>
-
 					<input type="email" name="email" placeholder="Email Address">
-					<input type="tel" name="Telephone" placeholder="Telephone Number">
+					<input type="text" name="telNumber" placeholder="Telephone Number">
 					<input type="text" name="subject" placeholder="Subject">
-					<textarea name="message" rows="8" cols="80" placeholder="Your message here..."></textarea>
-					<button type="submit" name="button">Submit</button>
+					<textarea name="msg" rows="8" cols="80" placeholder="Your message here..."></textarea>
+					<button type="button" name="button" onclick="return validateForm()">Submit</button>
+
 				</form>
 
 			</div>

@@ -117,6 +117,10 @@ $size: 42px;
   color: red;
   font-size: 16px;
 }
+#phoneErr, #emailErr, #subjectErr, #msgErr{
+  color: red;
+  font-size: 16px;
+}
 .error{
   border: 2px solid red;
 }

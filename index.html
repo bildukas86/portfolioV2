@@ -144,10 +144,14 @@
 									<input id="lastname" type="text" name="lastName" placeholder="Last name">
 								</div>
 					</div>
-					<input type="email" name="email" placeholder="Email Address">
-					<input type="text" name="telNumber" placeholder="Telephone Number">
-					<input type="text" name="subject" placeholder="Subject">
-					<textarea name="msg" rows="8" cols="80" placeholder="Your message here..."></textarea>
+					<span id="emailErr"></span>
+					<input id="email" type="email" name="email" placeholder="Email Address">
+					<span id="phoneErr"></span>
+					<input id="phonenumber" type="text" name="telNumber" placeholder="Telephone Number">
+					<span id="subjectErr"></span>
+					<input id="subject" type="text" name="subject" placeholder="Subject">
+					<span id="msgErr"></span>
+					<textarea id="msg" name="msg" rows="8" cols="80" placeholder="Your message here..."></textarea>
 					<button type="button" name="button" onclick="return validateForm()">Submit</button>
 
 				</form>

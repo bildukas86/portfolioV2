@@ -77,16 +77,13 @@ function printError(elemId, hintMsg) {
 function validateForm() {
 
 
-  // Defining error variables with a default value
-      var nameErr = emailErr = mobileErr = countryErr = genderErr = true;
-
-//check name
+//name and lastName validation
   let inputName = document.getElementById('firstname');
   if(inputName.value === "") {
           printError("nameErr", "* Please enter your name");
       } else {
           var regex = /^[a-zA-Z\s]+$/;
-          if(regex.test(inputName) === false) {
+          if(regex.test(inputName.value) === false || inputName.value.length < 2) {
               printError("nameErr", "* Please enter a valid name");
           } else {
               printError("nameErr", "");
@@ -99,39 +96,75 @@ function validateForm() {
               printError("lastnameErr", "* Please enter your last name");
           } else {
               var regex = /^[a-zA-Z\s]+$/;
-              if(regex.test(inputLastName) === false) {
+              if(regex.test(inputLastName.value) === false || inputLastName.value.length < 2) {
                   printError("lastnameErr", "* Please enter a valid Last name");
               } else {
                   printError("lastnameErr", "");
                   nameErr = false;
               }
           };
-      ///////////////////////////////////////////////////////  https://www.tutorialrepublic.com/codelab.php?topic=javascript&file=form-validation
-    // //check name
-    // let inputName = document.getElementById('in-name');
-    //   if (inputName.value === "" || inputName.value.length < 3 ) {
-    //     inputName.className = "error";
-    //     printError("nameErr", "Please enter your name");
-    //   }else{
-    //     inputName.className = "valid";
-    //     alert('Check all fields')
-    //   };
-    //
-    //   //check last name
-    //
-    //   let inputLastName = document.getElementById('in-lastname');
-    //     if (inputLastName.value === "" || inputLastName.value.length < 3 ) {
-    //       inputLastName.className = "error";
-    //     }else{
-    //       inputLastName.className = "valid";
-    //       alert('Check all fields')
-    //     };
-///////////////////////////////////////////////////
-//email validation
-///////////////////////////////////////////////////
+
+  //////////////////////////////////
+  ///Phone validation
+  ////////////////////////////////
+
+  let inputPhone = document.getElementById('phonenumber');
+  if (inputPhone.value === ""){
+      printError("phoneErr", "* Please enter Phone number.");
+  }else {
+      // var mobileRegEx = /^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$/;
+      var mobileRegEx = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+
+      // var landlineRegEx = /\s*\(?(0[1-6]{1}[0-9]{3}\)?[0-9]{6})\s*/;
+      if (mobileRegEx.test(inputPhone.value) === false) {
+        printError("phoneErr", "* Please enter a valid Phone Number.");
+      }else {
+        printError("phoneErr", "");
+        phoneErr = false;
+      }
+  };
+  //////////////////////////////////
+  ///email validation
+  ////////////////////////////////
 
 
+let inputEmail = document.getElementById('email');
+if (inputEmail.value === "") {
+    printError("emailErr", "* Please enter your email address.");
+}else {
+  var emailRegEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (emailRegEx.test(inputEmail.value) === false ) {
+    printError("emailErr", "* Please enter a valid email address.");
+  }else {
+    printError("emailErr", "");
+    phoneErr = false;
+  }
+}
 
+//////////////////////////////////
+///check subject not empty
+////////////////////////////////
+
+let inputSubject = document.getElementById('subject');
+
+if (inputSubject.value === "") {
+  printError("subjectErr", "* Please enter subject.");
+}else {
+  printError("subjectErr", "");
+  phoneErr = false;
+}
+
+//////////////////////////////////
+///check msg not empty
+////////////////////////////////
+let inputMsg = document.getElementById('msg');
+
+if (inputMsg.value === "") {
+  printError("msgErr", "* Please enter message.");
+}else {
+  printError("msgErr", "");
+  phoneErr = false;
+}
 
 
 };

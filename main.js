@@ -79,7 +79,7 @@ function validateForm() {
 
 //name and lastName validation
   let inputName = document.getElementById('firstname');
-  if(inputName.value.trim().length === 1) {
+  if(inputName.value.trim().length === 0) {
           printError("nameErr", "* Please enter your name");
           inputName.classList = "error";
       } else {
@@ -95,7 +95,7 @@ function validateForm() {
       };
 
       let inputLastName = document.getElementById('lastname');
-      if(inputLastName.value.trim().length === 1) {
+      if(inputLastName.value.trim().length === 0) {
               printError("lastnameErr", "* Please enter your last name");
               inputLastName.classList = "error";
           } else {

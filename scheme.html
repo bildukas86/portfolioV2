@@ -94,21 +94,27 @@
 					<h2>ekoncevicius@gmail.com</h2>
 
 				</div>
-				<form class="contact-form" action="#" method="post">
-
+				<form class="contact-form" method="post" >
 					<div class="name-lastname">
-						<div class="name">
-							<input type="text" name="firstName" placeholder="First name">
-						</div>
-						<div class="lastName">
-							<input type="text" name="lastName" placeholder="Last name">
-						</div>
+								<div class="name">
+									<span id="nameErr"></span>
+									<input id="firstname" type="text" name="firstName" placeholder="First name">
+								</div>
+								<div class="lastName">
+									<span id="lastnameErr"></span>
+									<input id="lastname" type="text" name="lastName" placeholder="Last name">
+								</div>
 					</div>
-					<input type="email" name="email" placeholder="Email Address">
-					<input type="text" name="telNumber" placeholder="Telephone Number">
-					<input type="text" name="subject" placeholder="Subject">
-					<textarea name="msg" rows="8" cols="80" placeholder="Your message here..."></textarea>
+					<span id="emailErr"></span>
+					<input id="email" type="email" name="email" placeholder="Email Address">
+					<span id="phoneErr"></span>
+					<input id="phonenumber" type="text" name="telNumber" placeholder="Telephone Number">
+					<span id="subjectErr"></span>
+					<input id="subject" type="text" name="subject" placeholder="Subject">
+					<span id="msgErr"></span>
+					<textarea id="msg" name="msg" rows="8" cols="80" placeholder="Your message here..."></textarea>
 					<button type="button" name="button" onclick="return validateForm()">Submit</button>
+
 				</form>
 
 			</div>

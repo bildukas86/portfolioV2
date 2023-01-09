@@ -139,7 +139,7 @@ function validateForm() {
 
 let inputEmail = document.getElementById('email');
 if (inputEmail.value === "") {
-    printError("emailErr", "* Please enter your email address.");
+    printError("emailErr", "* Email can't be empty.");
     inputEmail.classList = "error";
 }else {
   var emailRegEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -160,7 +160,7 @@ if (inputEmail.value === "") {
 let inputSubject = document.getElementById('subject');
 
 if (inputSubject.value === "") {
-  printError("subjectErr", "* Please enter subject.");
+  printError("subjectErr", "* Subject can't be empty.");
   inputSubject.classList = "error";
 }else {
   printError("subjectErr", "");

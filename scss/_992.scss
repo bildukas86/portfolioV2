@@ -1,12 +1,6 @@
 @media (min-width: 992px) {
 
-  #nameErr, #lastnameErr{
-    position: absolute;
-    bottom: 50px;
-    color: red;
-    font-size: 16px;
-
-  }
+  
   .container{
     .projects-xs{
       display: flex;
@@ -29,15 +23,7 @@
         // background-color: $info-background-color;
 
       }
-      .name-lastname{
-        display: inline-flex;
-        justify-content: space-between;
-        .name, .lastName{
-          margin: 5px 0;
-          font-size: 24px;
-          width: 49%;
-        }
-      }
+
     }
   }
 }

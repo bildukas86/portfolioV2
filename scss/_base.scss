@@ -115,10 +115,13 @@ $size: 42px;
 #phoneErr, #emailErr, #subjectErr, #msgErr, #nameErr, #lastnameErr{
   color: red;
   font-size: 16px;
+
 }
 .error{
   border: 2px solid red;
+  border-radius: 3px;
 }
 .valid{
   border: 2px solid green;
+  border-radius: 3px;
 }

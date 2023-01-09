@@ -81,12 +81,15 @@ function validateForm() {
   let inputName = document.getElementById('firstname');
   if(inputName.value === "") {
           printError("nameErr", "* Please enter your name");
+          inputName.classList = "error";
       } else {
           var regex = /^[a-zA-Z\s]+$/;
           if(regex.test(inputName.value) === false || inputName.value.length < 2) {
               printError("nameErr", "* Please enter a valid name");
+              inputName.classList = "error";
           } else {
               printError("nameErr", "");
+              inputName.classList = "valid";
               nameErr = false;
           }
       };
@@ -94,12 +97,15 @@ function validateForm() {
       let inputLastName = document.getElementById('lastname');
       if(inputLastName.value === "") {
               printError("lastnameErr", "* Please enter your last name");
+              inputLastName.classList = "error";
           } else {
               var regex = /^[a-zA-Z\s]+$/;
               if(regex.test(inputLastName.value) === false || inputLastName.value.length < 2) {
                   printError("lastnameErr", "* Please enter a valid Last name");
+                  inputLastName.classList = "error";
               } else {
                   printError("lastnameErr", "");
+                  inputLastName.classList = "valid";
                   nameErr = false;
               }
           };
@@ -111,6 +117,7 @@ function validateForm() {
   let inputPhone = document.getElementById('phonenumber');
   if (inputPhone.value === ""){
       printError("phoneErr", "* Please enter Phone number.");
+      inputPhone.classList = "error";
   }else {
       // var mobileRegEx = /^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$/;
       var mobileRegEx = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
@@ -118,8 +125,10 @@ function validateForm() {
       // var landlineRegEx = /\s*\(?(0[1-6]{1}[0-9]{3}\)?[0-9]{6})\s*/;
       if (mobileRegEx.test(inputPhone.value) === false) {
         printError("phoneErr", "* Please enter a valid Phone Number.");
+        inputPhone.classList = "error";
       }else {
         printError("phoneErr", "");
+        inputPhone.classList = "valid";
         phoneErr = false;
       }
   };
@@ -131,12 +140,15 @@ function validateForm() {
 let inputEmail = document.getElementById('email');
 if (inputEmail.value === "") {
     printError("emailErr", "* Please enter your email address.");
+    inputEmail.classList = "error";
 }else {
   var emailRegEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if (emailRegEx.test(inputEmail.value) === false ) {
     printError("emailErr", "* Please enter a valid email address.");
+    inputEmail.classList = "error";
   }else {
     printError("emailErr", "");
+    inputEmail.classList = "valid";
     phoneErr = false;
   }
 }
@@ -149,8 +161,10 @@ let inputSubject = document.getElementById('subject');
 
 if (inputSubject.value === "") {
   printError("subjectErr", "* Please enter subject.");
+  inputSubject.classList = "error";
 }else {
   printError("subjectErr", "");
+  inputSubject.classList = "valid";
   phoneErr = false;
 }
 
@@ -160,9 +174,11 @@ if (inputSubject.value === "") {
 let inputMsg = document.getElementById('msg');
 
 if (inputMsg.value === "") {
-  printError("msgErr", "* Please enter message.");
+  printError("msgErr", "* Message can't be empty.");
+  inputMsg.classList = "error";
 }else {
   printError("msgErr", "");
+  inputMsg.classList = "valid";
   phoneErr = false;
 }
 

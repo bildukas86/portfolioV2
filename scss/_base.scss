@@ -111,13 +111,8 @@ $size: 42px;
 ////////////////////////////////////////////
 //email validation errors
 ////////////////////////////////////////////
-#nameErr, #lastnameErr{
-  position: absolute;
-  bottom: 50px;
-  color: red;
-  font-size: 16px;
-}
-#phoneErr, #emailErr, #subjectErr, #msgErr{
+
+#phoneErr, #emailErr, #subjectErr, #msgErr, #nameErr, #lastnameErr{
   color: red;
   font-size: 16px;
 }
